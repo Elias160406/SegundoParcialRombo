@@ -12,7 +12,9 @@ namespace SegundoParcialRombo.Entidades
             public int DiagonalMayor { get; set; }
             public int DiagonalMenor { get; set; }
         public int TipoContorno { get; set; }
-            public double Lado
+
+
+        public double Lado
             {
                 get
                 {
@@ -38,8 +40,9 @@ namespace SegundoParcialRombo.Entidades
                 DiagonalMayor = diagonalMayor;
                 DiagonalMenor = diagonalMenor;
             }
+        
 
-        }
+    }
     }
 
 

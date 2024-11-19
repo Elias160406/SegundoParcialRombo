@@ -16,24 +16,24 @@ namespace SegundoParcialRombo.Windows
                 frmRomboAE frm = new frmRomboAE() { Text = "Agregar Elipse" };
                 DialogResult dr = frm.ShowDialog(this);
                 if (dr == DialogResult.Cancel) return;
-      
+
                 {
-                    
+
                     {
-                        
+
 
                     }
-                    
+
                     {
 
-                        
+
 
                     }
                 }
-               
+
                 {
 
-                   
+
 
                 }
             }
@@ -85,5 +85,9 @@ namespace SegundoParcialRombo.Windows
 
         }
 
+        private void tsbSalir_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

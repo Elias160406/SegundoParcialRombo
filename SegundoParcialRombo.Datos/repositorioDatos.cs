@@ -35,11 +35,25 @@ namespace SegundoParcialRombo.Datos
             }
             return false; 
         }
+        private double CalcularLado(Rombo rombo)
+        {
+            return Math.Sqrt(
+                Math.Pow(rombo.DiagonalMayor / 2, 2) +
+                Math.Pow(rombo.DiagonalMenor / 2, 2)
+            );
+        }
 
        
-        public List<Rombo> ObtenerRombos()
+        public List<Rombo> OrdenarPorLadoAscendente()
         {
-            return rombos;
+            return rombos.OrderBy(r => CalcularLado(r)).ToList();
+        }
+
+        
+        public List<Rombo> OrdenarPorLadoDescendente()
+        {
+            return rombos.OrderByDescending(r => CalcularLado(r)).ToList();
         }
     }
+}
 }
